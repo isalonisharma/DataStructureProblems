@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Stack;
 
-public class ReverseStackWithoutUsingLoop {
+public class ReverseStackWithRecursion {
 
 	static Stack<Character> st = new Stack<>();
 
