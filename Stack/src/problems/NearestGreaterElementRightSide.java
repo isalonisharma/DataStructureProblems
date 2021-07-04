@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Stack;
 
-public class NextGreaterElementUsingStack {
+public class NearestGreaterElementRightSide {
 	public static void main(String[] args) {
 		int arr[] = { 11, 13, 21, 3 };
 		printNGE(arr);
@@ -15,10 +15,9 @@ public class NextGreaterElementUsingStack {
 	 */
 	static void printNGE(int arr[]) {
 		Stack<Integer> leftSide = new Stack<>();
-		leftSide.push(arr[0]);
 		int size = arr.length;
 		int current;
-		for (int i = 1; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			current = arr[i];
 			while (!leftSide.isEmpty() && leftSide.peek() < current) {
 				System.out.println(leftSide.pop() + ": " + current);

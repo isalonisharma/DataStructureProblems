@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Stack;
 
-public class NextSmallerElementUsingStack {
+public class NearestSmallerElementRightSide {
 	public static void main(String args[]) {
 		int arr[] = { 11, 9, 21, 3 };
 		printNSE(arr);
