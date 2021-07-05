@@ -5,28 +5,28 @@ import java.util.Stack;
 public class NearestSmallerElementLeftSide {
 	public static void main(String[] args) {
 		int arr[] = { 11, 13, 3, 21 };
-		int output[] = printNSE(arr);
+		int output[] = nsl(arr);
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i] + ": " + output[i]);
 		}
 	}
 
-	private static int[] printNSE(int[] arr) {
-		Stack<Integer> stack = new Stack<>();
-		int[] output = new int[arr.length];
-		int current;
-		for (int i = 0; i < arr.length; i++) {
-			current = arr[i];
-			if (stack.isEmpty()) {
-				output[i] = -1;
-			} else {
-				while (!stack.isEmpty() && current < stack.peek()) {
-					stack.pop();
-				}
-				output[i] = (stack.empty()) ? (-1) : (stack.peek());
+	static int[] nsl(int[] nums) {
+		int[] lb = new int[nums.length];
+		Stack<Integer> st = new Stack<>();
+		st.push(0);
+		lb[0] = -1;
+		for (int i = 1; i < nums.length; i++) {
+			while (st.size() > 0 && nums[i] <= nums[st.peek()]) {
+				st.pop();
 			}
-			stack.push(current);
+			if (st.size() == 0) {
+				lb[i] = -1;
+			} else {
+				lb[i] = nums[st.peek()];
+			}
+			st.push(i);
 		}
-		return output;
+		return lb;
 	}
 }
