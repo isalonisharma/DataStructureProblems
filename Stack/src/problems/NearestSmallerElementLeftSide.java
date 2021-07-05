@@ -17,10 +17,14 @@ public class NearestSmallerElementLeftSide {
 		int current;
 		for (int i = 0; i < arr.length; i++) {
 			current = arr[i];
-			while (!stack.isEmpty() && current < stack.peek()) {
-				stack.pop();
+			if (stack.isEmpty()) {
+				output[i] = -1;
+			} else {
+				while (!stack.isEmpty() && current < stack.peek()) {
+					stack.pop();
+				}
+				output[i] = (stack.empty()) ? (-1) : (stack.peek());
 			}
-			output[i] = (stack.empty()) ? (-1) : (stack.peek());
 			stack.push(current);
 		}
 		return output;
