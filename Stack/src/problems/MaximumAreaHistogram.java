@@ -16,6 +16,7 @@ public class MaximumAreaHistogram {
 		for (int i = 0; i < n; i++) {
 			int w = rb[i] - lb[i] - 1;
 			int area = w * heights[i];
+			System.out.println(i + " :: " + rb[i] + " :: " + lb[i] + " :: " + w + " :: " + area);
 			maxArea = Math.max(maxArea, area);
 		}
 		return maxArea;

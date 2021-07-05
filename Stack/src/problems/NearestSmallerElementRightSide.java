@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class NearestSmallerElementRightSide {
 	public static void main(String args[]) {
-		int arr[] = { 11, 9, 21, 3 };
+		int arr[] = { 21, 3, 13, 11 };
 		int output[] = nsr(arr);
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i] + ": " + output[i]);
