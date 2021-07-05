@@ -4,29 +4,29 @@ import java.util.Stack;
 
 public class NearestGreaterElementRightSide {
 	public static void main(String[] args) {
-		int arr[] = { 11, 13, 21, 3 };
-		printNGE(arr);
+		int arr[] = { 11, 13, 3, 21 };
+		int output[] = printNGR(arr);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i] + ": " + output[i]);
+		}
 	}
 
-	/*
-	 * leftSide is a stack. compare current element is greater than peek value, if
-	 * it is than pop & print, it is not than do not go down because if peek is
-	 * greater then lower value will already have their first next greatest element
-	 */
-	static void printNGE(int arr[]) {
-		Stack<Integer> leftSide = new Stack<>();
-		int size = arr.length;
+	private static int[] printNGR(int[] arr) {
+		Stack<Integer> stack = new Stack<>();
+		int[] output = new int[arr.length];
 		int current;
-		for (int i = 0; i < size; i++) {
-			current = arr[i];
-			while (!leftSide.isEmpty() && leftSide.peek() < current) {
-				System.out.println(leftSide.pop() + ": " + current);
+		for (int i = arr.length - 1; i >= 0; i--) {
+		    current = arr[i];
+			if(stack.isEmpty()){
+			    output[i] = -1;
+			} else{
+			    while(!stack.isEmpty() && stack.peek() < current){
+			        stack.pop();
+			    }
+			    output[i] = stack.isEmpty() ? -1 : stack.peek();
 			}
-			leftSide.push(current);
+			stack.push(current);
 		}
-
-		while (!leftSide.isEmpty()) {
-			System.out.println(leftSide.pop() + ": -1");
-		}
+		return output;
 	}
 }

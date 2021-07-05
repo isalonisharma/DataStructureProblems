@@ -5,24 +5,28 @@ import java.util.Stack;
 public class NearestSmallerElementRightSide {
 	public static void main(String args[]) {
 		int arr[] = { 11, 9, 21, 3 };
-		printNSE(arr);
+		int output[] = printNSE(arr);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i] + ": " + output[i]);
+		}
 	}
 
-	private static void printNSE(int[] arr) {
-		Stack<Integer> leftSide = new Stack<Integer>();
-		leftSide.push(arr[0]);
-		int size = arr.length;
+	private static int[] printNSE(int[] arr) {
+		Stack<Integer> stack = new Stack<>();
+		int[] output = new int[arr.length];
 		int current;
-		for (int i = 1; i < size; i++) {
+		for (int i = arr.length - 1; i >= 0; i--) {
 			current = arr[i];
-			while (!leftSide.isEmpty() && leftSide.peek() > current) {
-				System.out.println(leftSide.pop() + ": " + current);
+			if (stack.isEmpty()) {
+				output[i] = -1;
+			} else {
+				while (!stack.isEmpty() && stack.peek() > current) {
+					stack.pop();
+				}
+				output[i] = stack.isEmpty() ? -1 : stack.peek();
 			}
-			leftSide.push(current);
+			stack.push(current);
 		}
-
-		while (!leftSide.isEmpty()) {
-			System.out.println(leftSide.pop() + ": -1");
-		}
+		return output;
 	}
 }
