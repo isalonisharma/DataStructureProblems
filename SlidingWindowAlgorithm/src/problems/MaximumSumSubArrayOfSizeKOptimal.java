@@ -18,8 +18,8 @@ public class MaximumSumSubArrayOfSizeKOptimal {
 	}
 
 	public static void main(String[] args) {
-		int integerArray[] = { 2, 3, 5, 2, 9, 7, 1 };
 		int windowSize = 3;
+		int integerArray[] = { 2, 3, 5, 2, 9, 7, 1 };
 		System.out.println(maxSum(integerArray, windowSize));
 	}
 }
