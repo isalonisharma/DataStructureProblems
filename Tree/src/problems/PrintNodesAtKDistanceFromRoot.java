@@ -2,7 +2,9 @@ package problems;
 
 public class PrintNodesAtKDistanceFromRoot {
 	public static void main(String args[]) {
+		
 		PN_BinaryTree tree = new PN_BinaryTree();
+		
 		/* Constructed binary tree is
         	  	1
         	  /   \
@@ -10,6 +12,7 @@ public class PrintNodesAtKDistanceFromRoot {
     		/ \     /
     		4 5 	8
 		 */
+		
 		tree.root = new PN_Node(1);
 		tree.root.left = new PN_Node(2);
 		tree.root.right = new PN_Node(3);

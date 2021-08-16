@@ -52,6 +52,7 @@ class MW_BinaryTree {
 
 /* time complexity : O(n^2) */
 public class MaximumWidthOfBinaryTree {
+	
 	public static void main(String args[]) {
 		MW_BinaryTree tree = new MW_BinaryTree();
 		/*

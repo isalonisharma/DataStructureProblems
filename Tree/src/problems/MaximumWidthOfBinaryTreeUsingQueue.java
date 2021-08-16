@@ -52,7 +52,6 @@ public class MaximumWidthOfBinaryTreeUsingQueue {
 		root.right.right.right = new node(7);
 
 		/*
-		  
 		  1
 		/	 \
 		2	  3

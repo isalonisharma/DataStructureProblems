@@ -37,9 +37,9 @@ class C_BinaryTree {
 	}
 }
 
-public class CheckIfBinaryTreeIsSubtreeOfAnotherBinaryTree{
-	public static void main(String args[])
-	{
+public class CheckIfBinaryTreeIsSubtreeOfAnotherBinaryTree {
+	
+	public static void main(String args[]) {
 		
 		/* Construct the following tree
 					  26

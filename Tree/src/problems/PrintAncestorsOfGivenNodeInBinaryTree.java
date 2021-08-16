@@ -11,6 +11,7 @@ public class PrintAncestorsOfGivenNodeInBinaryTree {
 			  /
 			 7
 		*/
+		
 		PA_BinaryTree tree = new PA_BinaryTree();
 		tree.root = new PA_Node(1);
 		tree.root.left = new PA_Node(2);

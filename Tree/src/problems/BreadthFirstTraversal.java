@@ -48,6 +48,7 @@ class BreadthFirstBinaryTree {
 }
 
 public class BreadthFirstTraversal {
+	
 	public static void main(String args[]) {
 		BreadthFirstBinaryTree tree = new BreadthFirstBinaryTree();
 		tree.root = new BTNode(1);

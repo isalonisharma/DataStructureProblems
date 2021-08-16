@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /* https://www.youtube.com/watch?v=VsxLHGUqAKs */
 public class InorderTreeTraversalWithoutRecursion {
+	
 	public static void main(String args[]) {
 		IT_BinaryTree tree = new IT_BinaryTree();
 		tree.root = new IT_Node(1);

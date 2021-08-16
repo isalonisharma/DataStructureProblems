@@ -68,6 +68,7 @@ class Binary_Tree {
 }
 
 public class ConstructTreeFromInorderAndPreorderEffectiveApproach {
+	
 	public static void main(String args[]) {
 		char[] inorder = { 'D', 'B', 'E', 'A', 'F', 'C' };
 		char[] preorder = { 'A', 'B', 'D', 'E', 'C', 'F' };

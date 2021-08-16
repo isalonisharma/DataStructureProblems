@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 /* https://youtu.be/kQ-aoKbGKSo */
 public class BreadthFirstTraversalUsingQueue {
+	
 	public static void main(String args[]) {
 		BTQ_BinaryTree treeLevel = new BTQ_BinaryTree();
 		treeLevel.root = new BTQ_Node(1);

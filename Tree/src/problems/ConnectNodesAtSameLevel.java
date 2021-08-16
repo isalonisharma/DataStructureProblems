@@ -53,9 +53,9 @@ class CSL_BinaryTree {
 	}
 }
 
-public class ConnectNodesAtSameLevel{
-	public static void main(String args[])
-	{
+public class ConnectNodesAtSameLevel {
+	
+	public static void main(String args[]) {
 		CSL_BinaryTree tree = new CSL_BinaryTree();
 
 		/* Constructed binary tree is

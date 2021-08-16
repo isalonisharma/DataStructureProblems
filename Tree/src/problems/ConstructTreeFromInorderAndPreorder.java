@@ -59,6 +59,7 @@ class MyBinaryTree {
 }
 
 public class ConstructTreeFromInorderAndPreorder {
+	
 	public static void main(String args[]) {
 		MyBinaryTree tree = new MyBinaryTree();
 		char inorder[] = new char[] { 'D', 'B', 'E', 'A', 'F', 'C' };

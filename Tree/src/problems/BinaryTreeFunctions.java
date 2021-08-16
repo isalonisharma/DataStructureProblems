@@ -117,6 +117,7 @@ public class BinaryTreeFunctions {
 	private static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
+		
 		BinaryTree binaryTree = new BinaryTree();
 		binaryTree.setRoot(binaryTree.insert(4));
 		binaryTree.getRoot().setLeft(binaryTree.insert(5));
