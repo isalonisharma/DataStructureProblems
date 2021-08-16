@@ -12,6 +12,7 @@ public class DeleteMiddleElementOfStack {
 		stack.push(5);
 		int middlePosition = (stack.size() / 2) + 1;
 		stack = deleteMiddleElementOfStack(stack, middlePosition);
+		
 		stack.forEach(i -> System.out.println(i));
 	}
 

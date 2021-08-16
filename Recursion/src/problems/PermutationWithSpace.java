@@ -1,6 +1,7 @@
 package problems;
 
 public class PermutationWithSpace {
+	
 	public static void main(String args[]) {
 		String input = "ABC", output = "";
 		output = String.valueOf(input.charAt(0));

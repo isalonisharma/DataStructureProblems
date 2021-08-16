@@ -1,6 +1,7 @@
 package problems;
 
 public class PermutationWithCaseChange {
+	
 	public static void main(String args[]) {
 		String input = "ab", output = "";
 		permutationFind(input, output);

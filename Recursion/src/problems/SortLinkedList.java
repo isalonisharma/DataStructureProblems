@@ -2,7 +2,6 @@ package problems;
 
 public class SortLinkedList {
 	static Node head;
-
 	static class Node {
 		int data;
 		Node next;

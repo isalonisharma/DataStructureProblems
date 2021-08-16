@@ -28,5 +28,4 @@ public class KthSymbolInGrammar {
 			return permutationFind(n - 1, k - mid) == 0 ? 1 : 0;
 		}
 	}
-
 }

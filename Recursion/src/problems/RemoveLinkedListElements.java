@@ -2,7 +2,6 @@ package problems;
 
 public class RemoveLinkedListElements {
 	static Node removeLinkedListElementsHead;
-
 	static class Node {
 		int val;
 		Node next;

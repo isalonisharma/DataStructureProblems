@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrintNBitBinaryNoHavingPrefixOf1MoreThan0 {
+	
 	public static void main(String args[]) {
 		int input = 3;
 		List<String> output = new ArrayList<>();

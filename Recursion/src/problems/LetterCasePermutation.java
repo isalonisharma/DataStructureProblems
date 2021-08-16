@@ -19,6 +19,7 @@ public class LetterCasePermutation {
 			String numericIncludeOnly = output + current;
 			input = input.substring(1);
 			permutationFind(input, numericIncludeOnly);
+
 		} else {
 			String lowerOutput = output + current.toLowerCase();
 			String upperOutput = output + current.toUpperCase();

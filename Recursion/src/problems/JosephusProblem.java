@@ -8,6 +8,8 @@ public class JosephusProblem {
 		System.out.println(josephusProblem.findTheWinner(40, 7));
 	}
 
+	int ans = -1;
+
 	public int findTheWinner(int n, int k) {
 		ArrayList<Integer> list = new ArrayList<>();
 		for (int i = 0; i < n; i++) {
@@ -17,8 +19,6 @@ public class JosephusProblem {
 		permutationFind(n, k - 1, 0, list);
 		return ans;
 	}
-	
-	int ans = -1;
 
 	public void permutationFind(int n, int k, int index, ArrayList<Integer> list) {
 		if (n == 1) {
